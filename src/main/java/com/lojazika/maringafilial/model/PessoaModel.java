@@ -1,4 +1,4 @@
-package com.lojazika.maringafilial.Model;
+package com.lojazika.maringafilial.model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -6,17 +6,17 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
 @Entity
-public class pessoaModel {
+public class PessoaModel {
 
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
-    long id;
+    Long id;
     private String nome;
     private String gmail;
     private int idade;
     private String cpf;
 
-    public pessoaModel() {}
+    public PessoaModel() {}
 
 
     public String getNome() { return nome;}
